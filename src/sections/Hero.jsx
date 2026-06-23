@@ -25,7 +25,7 @@ export const Hero = () => {
             key={dot.id}
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             style={{
-              backgroundColor: "#20b2a6",
+              backgroundColor: "#11082c",
               left: dot.left,
               top: dot.top,
               animation: dot.animation,
@@ -46,7 +46,7 @@ export const Hero = () => {
             </div>
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl">
+              <h1 className="text-5xl md:text-6xl lg">
                 Crafting <span className="text-primary">digital</span>
                 <br />
                 experiences with <br />
