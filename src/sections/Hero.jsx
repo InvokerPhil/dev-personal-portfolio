@@ -1,3 +1,6 @@
+import { Button } from "@/components/Button";
+import { ArrowRight } from "lucide-react";
+
 const greenDots = Array.from({ length: 30 }, (_, i) => ({
   id: i,
   left: `${(i * 37) % 100}%`,
@@ -46,21 +49,31 @@ export const Hero = () => {
             </div>
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl">
-                Crafting <span className="text-primary">digital</span>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+                Crafting robust{" "}
+                <span className="text-primary glow-text">systems</span>
                 <br />
-                experiences with <br />
-                <span className="font-serif italic font-normal text-white">
-                  precision.
+                through clean
+                <span className="font-serif italic font-normal text-white ml-2">
+                  architecture.
                 </span>
               </h1>
-              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in">
-                Hi, I'm Philip Guarin - a software engineer specializing in
-                Flutter and React. I build scalable, performant applications
-                that users love.
+              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-800">
+                Hi, I'm Philip Guarin — a Software Engineer specializing in
+                Flutter and React. I build scalable and maintainable
+                applications with clean, organized code and modern development
+                practices.
               </p>
             </div>
+
+            {/* CTA Buttons */}
+            <Button size="lg">
+              Contact Me
+              <ArrowRight className="w-5 h-5" />
+            </Button>
           </div>
+
+          {/* Right Column - Image */}
         </div>
       </div>
     </section>
